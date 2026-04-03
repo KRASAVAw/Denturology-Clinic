@@ -82,10 +82,10 @@ export default function App() {
   const tierScales = [blobScale1, blobScale2, blobScale3, blobScale4];
 
   /* Hero content fades away early in the scroll */
-  const heroOpacity  = useTransform(scrollYProgress, [0.0, 0.42], [1, 0]);
+  const heroOpacity  = useTransform(scrollYProgress, [0.0, 0.36], [1, 0]);
 
   /* Promise section fades in once blobs have largely covered the screen */
-  const promiseOpacity = useTransform(scrollYProgress, [0.34, 0.56], [0, 1]);
+  const promiseOpacity = useTransform(scrollYProgress, [0.30, 0.40], [0, 1]);
 
   /* Circles reveal by expanding their width, pushing text aside */
   const circleWidth1 = useTransform(smoothProgress, [0.76, 0.88], ["0em", "1.1em"]);
